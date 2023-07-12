@@ -5,9 +5,7 @@
     font-size: px2rem(30)
 a.logo
     background: url(/assets/images/papier.png) lightgray 50% / cover no-repeat
-    margin: 10px 0 10px
-    @include media-breakpoint-up(desktop)
-        padding: 12px
+    padding: 12px
 .hero
     .container
         .content
@@ -59,6 +57,11 @@ footer#document-footer .container
     padding-bottom: 0
     justify-content: end
     text-align: right
+
+header#document-header nav button[type="button"] 
+        display: none
+
+
 
 // .accueil-bis
 //     header#document-header
