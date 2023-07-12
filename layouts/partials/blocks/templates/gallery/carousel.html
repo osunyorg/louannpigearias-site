@@ -1,25 +1,27 @@
-{{ range .images }}
-  {{ if .file }}
-    {{- $image := partial "GetMedia" .file -}}
-    {{- if $image -}}
-      <figure>
-        <a  class="glightbox"
-            role="button"
-            data-glightbox="type: image;{{ if .credit }}description: {{ partial "PrepareHTML" .credit }}{{ end }}"
-            href="{{ partial "GetLightboxUrl" (dict "id" .id) }}"
-            title="{{- i18n "commons.lightbox.link.title" -}}"
-            aria-label="{{- i18n "commons.lightbox.link.title" -}}">
-          {{ partial "commons/image.html"
-            (dict
-              "image"    .id
-              "alt"      .alt
-              "sizes"   (dict "mobile" 40 "tablet" 40 "desktop" 40)
-            )}}
-          <figcaption>
-            {{ $image.name }}
-          </figcaption>
-        </a>
-      </figure>
-    {{- end -}}
+<div class="images">
+  {{ range .images }}
+    {{ if .file }}
+      {{- $image := partial "GetMedia" .file -}}
+      {{- if $image -}}
+        <figure>
+          <a  class="glightbox"
+              role="button"
+              data-glightbox="type: image;{{ if .credit }}description: {{ partial "PrepareHTML" .credit }}{{ end }}"
+              href="{{ partial "GetLightboxUrl" (dict "id" .id) }}"
+              title="{{- i18n "commons.lightbox.link.title" -}}"
+              aria-label="{{- i18n "commons.lightbox.link.title" -}}">
+            {{ partial "commons/image.html"
+              (dict
+                "image"    .id
+                "alt"      .alt
+                "sizes"   (dict "mobile" 40 "tablet" 40 "desktop" 40)
+              )}}
+            <figcaption>
+              {{ $image.name }}
+            </figcaption>
+          </a>
+        </figure>
+      {{- end -}}
+    {{ end }}
   {{ end }}
-{{ end }}
+</div>
