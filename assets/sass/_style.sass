@@ -32,8 +32,9 @@ body:not(.full-width) .document-content .block .block-content
 .block-gallery--carousel
     .block-content
         .images
-            @include grid(2)
-            grid-gap: 1rem 4rem
+            @include media-breakpoint-up(desktop)
+                @include grid(2)
+                grid-gap: 1rem 4rem
     figure
         picture
             margin-bottom: 0
