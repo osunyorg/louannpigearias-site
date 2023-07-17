@@ -1,4 +1,8 @@
 ---
 title: Menu principal
-items: []
+items:
+- title: About
+  target: "/about/"
+  kind: page
+  children: []
 
