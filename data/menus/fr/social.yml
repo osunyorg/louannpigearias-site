@@ -5,4 +5,8 @@ items:
   target: https://www.instagram.com/loupanepi/
   kind: url
   children: []
+- title: E-mail me
+  target: lou-pi@hotmail.fr
+  kind: url
+  children: []
 
