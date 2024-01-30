@@ -5,6 +5,10 @@ fr:
   contentDir: content/fr
   languageCode: fr
   languageName: Français
+  params:
+    social:
+      instagram: >-
+        https://www.instagram.com/loupanepi/
   permalinks:
     persons: /equipe/:slug/
   taxonomies:
