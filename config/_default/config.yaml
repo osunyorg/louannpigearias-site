@@ -8,3 +8,5 @@ params:
     position: after-hero
   summary:
     position: hero
+  debug:
+     productionUrl: "https://www.louannpi.com"
