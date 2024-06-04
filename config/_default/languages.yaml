@@ -11,8 +11,6 @@ fr:
       instagram: >-
         https://www.instagram.com/loupanepi/
   permalinks:
-    persons: /equipe/:slug/
-    persons_categories: /equipe/:slug/
   taxonomies:
     administrator: administrators
     author: authors
