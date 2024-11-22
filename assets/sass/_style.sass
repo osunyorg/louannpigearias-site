@@ -28,46 +28,6 @@ body:not(.full-width) .document-content .heading h2,
 body:not(.full-width) .document-content .block .block-content
     padding-left: 0
 
-.block-gallery--carousel
-    background: none !important
-    .block-content
-        .images
-            @include media-breakpoint-up(desktop)
-                @include grid(3)
-                grid-gap: 1rem 4rem
-    figure
-        figure
-        margin-bottom: 1rem
-        picture
-            margin-bottom: 0
-    picture
-        img
-            width: 80px
-            margin-bottom: 0
-
-    figcaption
-        align-self: center
-        margin-left: $spacing-2
-
-    a.glightbox
-        display: flex !important
-        flex-direction: row
-    figure > a
-        margin-bottom: 0
-        height: auto
-
-.goverlay,
-.glightbox-mobile .goverlay
-    background: white
-.glightbox-clean 
-    .gclose,
-    .gprev,
-    .gnext
-        &, &:hover
-            background: none
-            color: black
-        svg
-            filter: invert(100%)
 
 footer#document-footer .container
     padding-bottom: 0
@@ -90,3 +50,44 @@ header#document-header nav
 
 footer#document-footer
     margin-top: $spacing-6
+
+// LEGACY
+// .block-gallery--carousel
+//     background: none !important
+//     .block-content
+//         .images
+//             @include media-breakpoint-up(desktop)
+//                 @include grid(3)
+//                 grid-gap: 1rem 4rem
+//     figure
+//         figure
+//         margin-bottom: 1rem
+//         picture
+//             margin-bottom: 0
+//     picture
+//         img
+//             width: 80px
+//             margin-bottom: 0
+
+//     figcaption
+//         align-self: center
+//         margin-left: $spacing-2
+
+//     a.glightbox
+//         display: flex !important
+//         flex-direction: row
+//     figure > a
+//         margin-bottom: 0
+//         height: auto
+// .goverlay,
+// .glightbox-mobile .goverlay
+//     background: white
+// .glightbox-clean 
+//     .gclose,
+//     .gprev,
+//     .gnext
+//         &, &:hover
+//             background: none
+//             color: black
+//         svg
+//             filter: invert(100%)
