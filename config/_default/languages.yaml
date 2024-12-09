@@ -7,9 +7,14 @@ fr:
   languageCode: fr
   languageName: Français
   params:
-    social:
-      instagram: >-
-        https://www.instagram.com/louannpi
+    contact_details:
+      social_networks:
+        instagram:
+          label: >-
+            louannpi
+          value: >-
+            https://instagram.com/louannpi
+
   permalinks:
   taxonomies:
     administrator: administrators
