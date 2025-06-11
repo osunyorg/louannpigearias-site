@@ -16,8 +16,6 @@ fr:
           value: >-
             https://instagram.com/louannpi
 
-  permalinks:
-    pages_categories: /:slug/
   taxonomies:
     administrator: administrators
     author: authors
