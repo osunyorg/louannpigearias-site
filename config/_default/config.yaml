@@ -3,7 +3,7 @@ _merge: deep
 
 params:
   breadcrumb:
-    position: after-hero
+    position: none
   summary:
     position: hero
   debug:
