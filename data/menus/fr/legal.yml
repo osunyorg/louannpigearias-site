@@ -2,10 +2,12 @@
 title: Informations légales
 items:
 - title: Legal
+  slug: legal
   target: "/legal/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/legal"
   file: content/fr/pages/legal/_index.html
 
